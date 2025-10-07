@@ -11,4 +11,4 @@ console.log(randomElement);
 }
 getstartupname(firstword, secondword);
 
-
+// I am geeting the name BlueHub for my Startup_Name_Generator
