@@ -1,14 +1,15 @@
-
+// firstword array, words are taking from the gitbook
 const firstword = ['Tech', 'Inno', 'Smart', 'Blue', 'Next', 'Bright', 'Quantum', 'Rapid', 'Future', 'Digital'];
+
+// secondword Array, words are taking from the gitbook
 const secondword = ['Vision', 'Solutions', 'Systems', 'Works', 'Dynamics', 'Hub', 'Network', 'Innovations', 'labs', 'path'];
 
-function getstartupname (a,b){
-    let randomNumberFromA = Math.floor(Math.random() * a.length);
-    let randomNumberFromB = Math.floor (Math.random()* b.length );
-    let randomElement = a[randomNumberFromA] + '' + b[randomNumberFromB];
-
-console.log(randomElement);
+const getStartUpName = () =>{
+    const firstNum = Math.floor(Math.random()* firstword.length)
+    const secondNum = Math.floor(Math.random()* secondword.length)
+    return `${firstword[firstNum]} ${secondword[secondNum]}`
 }
-getstartupname(firstword, secondword);
 
-// I am geeting the name BlueHub for my Startup_Name_Generator
+console.log("Your startup name is: " + getStartUpName() )
+
+// I am geeting the name Tech Systems for my Startup_Name_Generator
